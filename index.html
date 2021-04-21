@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>OVIS</title>
+    <title>OVIS Workshop</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -68,7 +68,7 @@
             <div class="row align-items-center">
                 <div class="col-12 col-lg-8 d-flex">
                     <a href="index.html" class="site-logo">
-                        Occluded Video Instance Segmentation
+                        Occluded Video Instance Segmentation Workshop
                         <!-- <b>Occluded Video Instance Segmentation</b> -->
                     </a>
                     <a href="#"
@@ -102,16 +102,13 @@
                                 <a href="index.html" class="nav-link text-left">Home</a>
                             </li>
                             <li>
-                                <a href="index.html#dates" class="nav-link text-left">Important dates</a>
+                                <a href="index.html#challenge" class="nav-link text-left">Challenge Track</a>
                             </li>
                             <li>
-                                <a href="index.html#schedule" class="nav-link text-left">Schedule</a>
+                                <a href="index.html#paper" class="nav-link text-left">Paper Track</a>
                             </li>
                             <li>
-                                <a href="index.html#speakers" class="nav-link text-left">Speakers</a>
-                            </li>
-                            <li>
-                                <a href="index.html#challenge" class="nav-link text-left">Challenge</a>
+                                <a href="index.html#workshop" class="nav-link text-left">ICCV 2021 Workshop</a>
                             </li>
                             <!-- <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" id="navbarDropdown"
@@ -158,14 +155,14 @@
 
 </div>
 
-<div class="site-blocks-cover overlay inner-page-cover" style="background-image: url('images/Banner_cropped.png');"
+<div class="site-blocks-cover overlay inner-page-cover" style="background-image: url('images/banner.jpg');"
      data-stellar-background-ratio="0.5">
     <div class="container">
         <div class="row align-items-center justify-content-center">
             <div class="col-md-10 text-center" data-aos="fade-up">
                 <h3> Occluded Video Instance Segmentation (OVIS)</h3>
                 <h5> A workshop and challenge focusing on occluded object understanding in video
-                <h3> October 11<sup>th</sup> - 17<sup>th</sup>, 2021 Virtual Online</h3>
+                <h3> October 11<sup>th</sup> - 17<sup>th</sup>, ICCV 2021 Workshop</h3>
             </div>
         </div>
     </div>
@@ -176,67 +173,64 @@
 
 
         <div class="row">
-            <div class="col-lg-12">
+
+
+            <div class="col-lg-12" id="challenge" style="padding-top:80px;margin-top:-80px;">
                 <div class="section-title">
-                    <h2>Introduction</h2>
+                    <h2>Challenge Track</h2>
                 </div>
                 <div class="trend-entry d-flex">
                     <div class="trend-contents">
                         <p>
-                            Although deep learning methods have achieved advanced video object recognition performance in recent years, perceiving objects in heavy occlusion video scenes is still a very challenging task. The difficulty of precisely localizing and reasoning heavily occluded objects in videos reveals that current deep learning models perform differently with the human vision system, and confirms that it is urgent to design new paradigms for video understanding.
-
-                            Topics include but not limited to:
+                            In the visual world, objects rarely occur in isolation.
+                            The psychophysical and computational studies have demonstrated that human vision systems can perceive heavily occluded objects with contextual reasoning and association.
+                            The question then becomes, can our video understanding system perceive objects that are severely obscured?
+                            The OVIS competition will be hosted on an online platform and presentations will be delivered on Zoom.
                         </p>
-                        <ul>
-                            <li>Video understanding</li>
-                            <li>Occluded video instance segmentation</li>
-                            <li>Occluded object detection</li>
-                            <li>Occlusion reasoning</li>
-                            <li>Occlusion edge detection</li>
-                            <li>Video object segmentation</li>
-                            <li>Video object detection</li>
-                            <li>Multi-object tracking</li>
-                        </ul>
-                        <!-- <h3> Submission Information </h3>
-                            The contributions can have two formats
-                            <ul>
-                              <li>Extended Abstracts of max 4 pages (excluding references)</li>
-                              <li>Papers of the same length of CVPR submissions</li>
-                            </ul>
-                            We encourage authors who want to present and discuss their ongoing work to choose the Extended Abstract format.
-                            <br>According to the CVPR rules, extended abstracts will not count as archival.
+                        <h5>Dataset</h5>
+                            OVIS is a new large scale benchmark dataset for video instance segmentation task.
+                            It is designed with the philosophy of perceiving object occlusions in videos, which could reveal the complexity and the diversity of real-world scenes.
 
-                            <br>The submissions should be formatted in the CVPR 2021 format and uploaded through the <a href="https://cmt3.research.microsoft.com/LLID2021" class="external">L2ID CMT Site</a>  -->
+                            <!-- <br><b>OVIS consists of:</b> -->
+                            OVIS consists of:
+                            <ul>
+                              <li>296k high-quality instance masks</li>
+                              <li>25 commonly seen semantic categories</li>
+                              <li>901 videos with severe object occlusions</li>
+                              <li>5,223 unique instances</li>
+                            </ul>
+
+                            <p>
+                                We use average precision (AP) at different intersection-over-union(IoU) thresholds and average recall (AR) as our evaluation metrics, following Youtube-VIS.
+                                The IoU in video instance segmentation is the sum of intersection area over the sum of union area across the video.
+                            </p>
+
+                            <a href="https://competitions.codalab.org/competitions/28757#participate">Dataset Download</a><br>
+                            <a href="https://competitions.codalab.org/competitions/28757">Temporary Evaluation Server (for validation set only)</a><br>
+                            For more details about the dataset, please refer to our <a href="https://arxiv.org/abs/2102.01558">paper</a> or <a href="http://songbai.site/ovis/">website</a>.
                     </div>
                 </div>
-            </div>
-
-
-            <div class="col-lg-12" id="dates" style="padding-top:80px;margin-top:-80px;">
-                <p style="text-align: center">Please feel free to contact us if you have any suggestions to improve our workshop! &nbsp&nbsp <strong>xgwang@hust.edu.cn</strong> </p>
-                <div class="section-title">
-                    <h2>Important Dates</h2>
-                </div>
-                <div class="trend-entry d-flex"> 
+                <h5>Competition Schedule</h5>
+                <div class="trend-entry d-flex">
                     <table class="table table-striped">
                         <thead>
                         <tr>
-                            <th scope="col"> Workshop</th>
+                            <th scope="col"> Competition</th>
                             <th scope="col"> Date</th>
                         </tr>
                         </thead>
                         <tbody> 
                         <tr>
-                            <td>Paper submission deadline</td>
-                            <td>Aug 12th, 2021 (11:59PM Pacific Time)</td>
+                            <td>Competition start</td>
+                            <td>May 20th, 2021 (11:59PM Pacific Time)</td>
                         </tr> 
                         <tr>
-                            <td>Final decisions to authors</td>
-                            <td>Sep 12th, 2021 (11:59PM Pacific Time)</td>
+                            <td>Submission deadline</td>
+                            <td>Aug 20th, 2021 (11:59PM Pacific Time)</td>
                         </tr>
                         <tr>
-                            <td>Camera-ready due</td>
-                            <td>Sep 17th, 2021 (11:59PM Pacific Time)</td>
+                            <td>Decisions to participants</td>
+                            <td>Aug 27th, 2021 (tentative)</td>
                         </tr>
                       <!--   <tr>
                             <td>Poster</td>
@@ -248,10 +242,213 @@
             </div>
 
 
-            <div class="col-lg-12" id="speakers" style="padding-top:80px;margin-top:-80px;">
+            <div class="col-lg-12" id="paper" style="padding-top:80px;margin-top:-80px;">
                 <div class="section-title">
-                    <h2>Speakers</h2>
+                    <h2>Paper Track</h2>
                 </div>
+                <div class="trend-entry d-flex">
+                    <div class="trend-contents">
+                        <h5>Call for Papers</h5>
+                        <p>
+                            Although deep learning methods have achieved advanced video object recognition performance in recent years, perceiving objects in heavy occlusion video scenes is still a very challenging task.
+                            The difficulty of precisely localizing and reasoning heavily occluded objects in videos reveals that current deep learning models perform differently with the human vision system, and confirms that it is urgent to design new paradigms for video understanding.
+                        </p>
+                        <div class="trend-entry d-flex">
+                            <div class="trend-contents">
+                                Topics include but not limited to:
+                                <ul>
+                                    <li>Video understanding</li>
+                                    <li>Occluded video instance segmentation</li>
+                                    <li>Occluded object detection</li>
+                                    <li>Occlusion reasoning</li>
+                                    <li>Occlusion edge detection</li>
+                                    <li>Video object segmentation</li>
+                                    <li>Video object detection</li>
+                                    <li>Multi-object tracking</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <h5>Paper Track Schedule</h5>
+                        <div class="trend-entry d-flex"> 
+                            <table class="table table-striped">
+                                <thead>
+                                <tr>
+                                    <th scope="col"> Paper</th>
+                                    <th scope="col"> Date</th>
+                                </tr>
+                                </thead>
+                                <tbody> 
+                                <tr>
+                                    <td>Paper submission deadline</td>
+                                    <td>Aug 12th, 2021 (11:59PM Pacific Time)</td>
+                                </tr> 
+                                <tr>
+                                    <td>Final decisions to authors</td>
+                                    <td>Sep 12th, 2021 (tentative)</td>
+                                </tr>
+                                <tr>
+                                    <td>Camera-ready due</td>
+                                    <td>Sep 17th, 2021 (11:59PM Pacific Time)</td>
+                                </tr>
+                              <!--   <tr>
+                                    <td>Poster</td>
+                                    <td>10:00-11:00, June 16, 2021</td>
+                                </tr> -->
+                                </tbody>
+                            </table>
+                        </div>
+                        <h5>Tentative Program Committee</h5>
+                        <div class="row justify-content-md-center">
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <div class="post-meta">
+                                        <span class="d-block"><a href="https://www.cs.jhu.edu/~ayuille/index.html">Alan Yuille</a> </span>
+                                        <span class="date-read">John Hopkins University</span>
+                                        <span class="date-read"><br>&nbsp;</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <div class="post-meta">
+                                        <span class="d-block"><a href="https://www.robots.ox.ac.uk/~phst/">Philip H.S. Torr</a> </span>
+                                        <span class="date-read">University of Oxford</span>
+                                        <span class="date-read"><br>&nbsp;</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <div class="post-meta">
+                                        <span class="d-block"><a href="https://vision.cornell.edu/se3/people/serge-belongie/">Serge Belongie</a> </span>
+                                        <span class="date-read">Cornell University</span>
+                                        <span class="date-read"><br>&nbsp;</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <div class="post-meta">
+                                        <span class="d-block"><a href="https://pages.ucsd.edu/~ztu/">Zhuowen Tu</a> </span>
+                                        <span class="date-read">University of California San Diego</span>
+                                        <span class="date-read"><br>&nbsp;</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <div class="post-meta">
+                                        <span class="d-block"><a href="http://mepro.bjtu.edu.cn/zhaoyao/index.htm">Yao Zhao</a> </span>
+                                        <span class="date-read">Beijing Jiaotong University</span>
+                                        <span class="date-read"><br>&nbsp;</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <div class="post-meta">
+                                        <span class="d-block"><a href="https://jingdongwang2017.github.io/">Jingdong Wang</a> </span>
+                                        <span class="date-read">Microsoft Research Asia</span>
+                                        <span class="date-read"><br>&nbsp;</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <div class="post-meta">
+                                        <span class="d-block"><a href="http://122.205.5.5:8071/~xbai/">Xiang Bai</a> </span>
+                                        <span class="date-read">Huazhong University of Science and Technology</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <div class="post-meta">
+                                        <span class="d-block"><a href="https://profiles.uts.edu.au/Yi.Yang">Yi Yang</a> </span>
+                                        <span class="date-read">University of Technology Sydney</span>
+                                        <span class="date-read"><br>&nbsp;</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <div class="post-meta">
+                                        <span class="d-block"><a href="https://jifengdai.org/">Jifeng Dai</a> </span>
+                                        <span class="date-read">SenseTime Group Ltd</span>
+                                        <span class="date-read"><br>&nbsp;</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <div class="post-meta">
+                                        <span class="d-block"><a href="https://weiyc.github.io/">Yunchao Wei</a> </span>
+                                        <span class="date-read">Beijing Jiaotong University</span>
+                                        <span class="date-read"><br>&nbsp;</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <div class="post-meta">
+                                        <span class="d-block"><a href="https://xinggangw.info/index.htm">Xinggang Wang</a> </span>
+                                        <span class="date-read">Huazhong University of Science and Technology</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <div class="post-meta">
+                                        <span class="d-block"><a href="http://songbai.site/">Song Bai</a> </span>
+                                        <span class="date-read">Bytedance Research</span>
+                                        <span class="date-read"><br>&nbsp;</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <div class="post-meta">
+                                        <span class="d-block"><a href="https://hszhao.github.io/">Hengshuang Zhao</a> </span>
+                                        <span class="date-read">University of Oxford</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <div class="post-meta">
+                                        <span class="d-block">&nbsp;</span>
+                                        <span class="date-read">&nbsp;</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <div class="post-meta">
+                                        <span class="d-block">&nbsp;</span>
+                                        <span class="date-read">&nbsp;</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <div class="post-meta">
+                                        <span class="d-block">&nbsp;</span>
+                                        <span class="date-read">&nbsp;</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-lg-12" id="workshop" style="padding-top:80px;margin-top:-80px;">
+                <div class="section-title">
+                    <h2>ICCV 2021 Workshop</h2>
+                </div>
+                <h5>Speakers</h5>
                 <div class="row justify-content-md-center">
                     <div class="col-md-3">
                         <div class="card">
@@ -273,14 +470,8 @@
                     </div>
                 </div>
 
-                <p></p>
-            </div>
-
-
-            <div class="col-lg-12" id="schedule">
-                <div class="section-title">
-                    <h2>Schedule</h2>
-                </div>
+                <p><br></p>
+                <h5>Workshop Schedule</h5>
                 <div class="trend-entry d-flex">
                     <table align="center" class="table  table-hover">
                     <thead>
@@ -337,72 +528,6 @@
             </div>
 
 
-            <div class="col-lg-12" id="challenge" style="padding-top:80px;margin-top:-80px;">
-                <div class="section-title">
-                    <h2>Challenge</h2>
-                </div>
-                <div class="trend-entry d-flex">
-                    <div class="trend-contents">
-                        <p>
-                            In the visual world, objects rarely occur in isolation.
-                            The psychophysical and computational studies have demonstrated that human vision systems can perceive heavily occluded objects with contextual reasoning and association.
-                            The question then becomes, can our video understanding system perceive objects that are severely obscured?
-                        </p>
-                        <h5>Dataset</h5>
-                            OVIS is a new large scale benchmark dataset for video instance segmentation task.
-                            It is designed with the philosophy of perceiving object occlusions in videos, which could reveal the complexity and the diversity of real-world scenes.
-
-                            <!-- <br><b>OVIS consists of:</b> -->
-                            OVIS consists of:
-                            <ul>
-                              <li>296k high-quality instance masks</li>
-                              <li>25 commonly seen semantic categories</li>
-                              <li>901 videos with severe object occlusions</li>
-                              <li>5,223 unique instances</li>
-                            </ul>
-
-                            <p>
-                                We use average precision (AP) at different intersection-over-union(IoU) thresholds and average recall (AR) as our evaluation metrics, following Youtube-VIS.
-                                The IoU in video instance segmentation is the sum of intersection area over the sum of union area across the video.
-                            </p>
-
-                            <a href="https://competitions.codalab.org/competitions/28757#participate">Dataset Download</a><br>
-                            <a href="https://competitions.codalab.org/competitions/28757">Evaluation Server (for validation set only)</a><br>
-                            For more details about the dataset, please refer to our <a href="https://arxiv.org/abs/2102.01558">paper</a> or <a href="http://songbai.site/ovis/">website</a>.
-                    </div>
-                </div>
-                <h5>Competition Schedule</h5>
-                <div class="trend-entry d-flex"> 
-                    <table class="table table-striped">
-                        <thead>
-                        <tr>
-                            <th scope="col"> Competition</th>
-                            <th scope="col"> Date</th>
-                        </tr>
-                        </thead>
-                        <tbody> 
-                        <tr>
-                            <td>Competition start</td>
-                            <td>May 20th, 2021 (11:59PM Pacific Time)</td>
-                        </tr> 
-                        <tr>
-                            <td>Submission deadline</td>
-                            <td>Aug 20th, 2021 (11:59PM Pacific Time)</td>
-                        </tr>
-                        <tr>
-                            <td>Decisions to participants</td>
-                            <td>Aug 27th, 2021 (11:59PM Pacific Time)</td>
-                        </tr>
-                      <!--   <tr>
-                            <td>Poster</td>
-                            <td>10:00-11:00, June 16, 2021</td>
-                        </tr> -->
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-
-
             <div class="col-lg-12" id="people" style="padding-top:80px;margin-top:-80px;">
                 <div class="section-title">
                     <h2>Organizers</h2>
@@ -455,7 +580,7 @@
                     </div>
                     <div class="col-md-3">
                         <div class="card">
-                            <img class="rounded-circle" src="https://scholar.googleusercontent.com/citations?view_op=view_photo&user=UeltiQ4AAAAJ&citpid=3" height="175" width="100%"/>
+                            <img class="rounded-circle" src="images/xiangbai_cropped.jfif" height="175" width="100%"/>
                             <div class="post-meta">
                                 <span class="d-block"><a href="http://122.205.5.5:8071/~xbai/">Xiang Bai</a> </span>
                                 <span class="date-read">xbai AT hust.edu.cn</span>
@@ -527,7 +652,7 @@
                     <p>
                         <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                         Copyright &copy;<script>document.write(new Date().getFullYear());</script>
-                        All rights reserved | This template is made with <i class="icon-heart text-danger"
+                        All rights reserved | Webmaster: Jiyang Qi <a href="mailto:jiyangqi@hust.edu.cn">email</a> | This template is made with <i class="icon-heart text-danger"
                                                                             aria-hidden="true"></i> by <a
                             href="https://colorlib.com" target="_blank">Colorlib</a>
                         <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
