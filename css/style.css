@@ -943,6 +943,23 @@ strong {
   background: #09162a;
   padding: 5rem; }
 
+.quote-bibtex {
+  background: #f6f6f7;
+  /* border: 1px solid;
+  border-color: rgb(218, 215, 215);
+  border-radius: 0.3rem; */
+  margin-top: 0.4rem;
+  margin-bottom: 0.7rem;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  padding-left: 0.8rem;
+  font-size: 75%;
+  line-height: 1.5;
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  /* width: 99%; */
+  overflow-x: auto;
+}
+
 .quote-form .form-control {
   border: none;
   padding-left: 0;
